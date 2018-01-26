@@ -6,9 +6,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content style="background-color:#213341">
+  <button ion-button block (click)="showLocationFromGps()">GPS</button>
+  <button ion-button block (click)="Direction()">Direction</button>
+  <div #map id="map"></div>
 </ion-content>
